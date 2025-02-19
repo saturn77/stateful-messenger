@@ -5,8 +5,9 @@ A library for message passing between upstream logic and an Eframe instance, fac
 
 The requirements frame and focus the scope of the library, and are helpful guideposts when ascertaining which features to put into the software. 
 
-- Use of traits to define generic featurs in all the messages
-- Asynchronous by nature
+- Use of traits to define generic features in all message types
+- Composable messages; with base messages each having their own type
+- Asynchronous by nature; allowing async like functionality
 - Handshaking from the upstream process and the eframe instance
 - State machine to handle the process of transferring a message
 - Readily modified Rust code; may employ advanced features but emphasis on making the code maintainable and readable
